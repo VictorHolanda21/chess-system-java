@@ -36,4 +36,9 @@ public class Board {
 		return this.pieces[pos.getRow()][pos.getColumn()];
 	}
 	
+	public void placePiece(Piece piece, Position pos) {
+		this.pieces[pos.getRow()][pos.getColumn()] = piece;
+		piece.position = pos;
+	}
+	
 }
